@@ -1,0 +1,116 @@
+{
+    "name": "J125_9",
+    "tasks" : {
+        "0": {
+            "name": "Job #1",
+            "expected_duration": 16,
+            "skills_needed": ["H#17", "H#02", "H#11", "H#01"],
+            "traits": [0.49, 0.022, 0.61, 0.42, 0.24],
+            "dependencies": []
+        },
+        
+        "1": {
+            "name": "Job #2",
+            "expected_duration": 19,
+            "skills_needed": ["H#18", "H#10", "H#16", "H#01"],
+            "traits": [0.34, 0.063, 0.067, 0.3, 0.38],
+            "dependencies": [0]
+        },
+        
+        "2": {
+            "name": "Job #3",
+            "expected_duration": 10,
+            "skills_needed": ["H#18", "H#18", "H#01", "H#08"],
+            "traits": [0.7, 0.88, 0.2, 0.084, 0.15],
+            "dependencies": [0]
+        },
+        
+        "3": {
+            "name": "Job #4",
+            "expected_duration": 19,
+            "skills_needed": ["H#05", "H#00", "H#19", "H#16", "H#15"],
+            "traits": [0.76, 0.038, 0.21, 0.54, 0.36],
+            "dependencies": [0, 1]
+        },
+        
+        "4": {
+            "name": "Job #5",
+            "expected_duration": 16,
+            "skills_needed": ["H#18", "H#14", "H#19", "H#09", "H#07", "H#17"],
+            "traits": [0.22, 0.38, 0.37, 0.48, 0.77],
+            "dependencies": [2]
+        },
+        
+        "5": {
+            "name": "Job #6",
+            "expected_duration": 7,
+            "skills_needed": ["H#18", "H#19", "H#00"],
+            "traits": [0.53, 0.57, 0.39, 0.29, 0.53],
+            "dependencies": [3]
+        },
+        
+        "6": {
+            "name": "Job #7",
+            "expected_duration": 9,
+            "skills_needed": ["H#06", "H#19"],
+            "traits": [0.78, 0.3, 0.31, 0.066, 0.55],
+            "dependencies": [1, 2, 3]
+        },
+        
+        "7": {
+            "name": "Job #8",
+            "expected_duration": 11,
+            "skills_needed": ["H#06", "H#14", "H#13", "H#15"],
+            "traits": [0.3, 0.053, 0.089, 0.66, 0.77],
+            "dependencies": [2]
+        },
+        
+        "8": {
+            "name": "Job #9",
+            "expected_duration": 14,
+            "skills_needed": ["H#07", "H#18", "H#04", "H#03", "H#05", "H#01", "H#02"],
+            "traits": [0.55, 0.083, 0.66, 0.17, 0.25],
+            "dependencies": [3, 7]
+        },
+        
+        "9": {
+            "name": "Job #10",
+            "expected_duration": 5,
+            "skills_needed": ["H#03", "H#00", "H#12", "H#11", "H#18"],
+            "traits": [0.99, 0.35, 0.76, 0.25, 0.034],
+            "dependencies": [4, 5, 7]
+        },
+        
+        "10": {
+            "name": "Job #11",
+            "expected_duration": 6,
+            "skills_needed": ["H#02", "H#15", "H#03", "H#01", "H#16", "H#07"],
+            "traits": [0.4, 0.07, 0.84, 0.49, 0.83],
+            "dependencies": [6, 8, 9]
+        },
+        
+        "11": {
+            "name": "Job #12",
+            "expected_duration": 10,
+            "skills_needed": ["H#08", "H#02", "H#06", "H#10"],
+            "traits": [0.71, 0.95, 0.64, 0.063, 0.68],
+            "dependencies": [1, 4, 5]
+        },
+        
+        "12": {
+            "name": "Job #13",
+            "expected_duration": 5,
+            "skills_needed": ["H#02", "H#12", "H#14", "H#09", "H#05"],
+            "traits": [0.85, 0.26, 0.59, 0.94, 0.64],
+            "dependencies": [1, 8, 9]
+        },
+        
+        "13": {
+            "name": "Job #14",
+            "expected_duration": 13,
+            "skills_needed": ["H#02", "H#05", "H#17", "H#17", "H#11"],
+            "traits": [0.98, 0.36, 0.32, 0.15, 0.71],
+            "dependencies": [10, 11, 12]
+        }
+    }
+}
